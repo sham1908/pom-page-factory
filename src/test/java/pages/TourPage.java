@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class TourPage extends BasePage{
 
@@ -23,9 +24,18 @@ public class TourPage extends BasePage{
     public void verifyTourPageTitle (String expectedText) {
         Assert.assertEquals(readText(tourPageTitle), expectedText);
     }
+
     //Verify Tour Page QA Title
     public void verifyTourPageQATitle (String expectedText) {
         Assert.assertEquals(readText(tourPageQATitle), expectedText);
+    }
+
+    //Verify Tour Page All titles with Soft Assertion
+    public void verifyTourPageSoftAssert (String expectedText) {
+        SoftAssert soft = new SoftAssert();
+        soft.assertEquals(readText(tourPageTitle), expectedText);
+        soft.assertEquals(readText(tourPageQATitle), expectedText);
+        soft.assertAll();
     }
 
 }
