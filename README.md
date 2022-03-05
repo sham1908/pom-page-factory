@@ -1,5 +1,6 @@
 # Selenium: Page Object Model with Page Factory
 
 How to run the tests:
-- add chrome Driver in the root directory
+- download chromedriver
+- add the chromedriver file into the root directory
 - Run the tests from the testng.xml
