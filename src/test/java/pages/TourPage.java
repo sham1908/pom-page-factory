@@ -19,7 +19,6 @@ public class TourPage extends BasePage{
     @FindBy(xpath = "//div[@class='about-qa']//h2[@class='about-title']")
     public WebElement tourPageQATitle;
 
-
     //Verify Tour Page Title
     public void verifyTourPageTitle (String expectedText) {
         Assert.assertEquals(readText(tourPageTitle), expectedText);

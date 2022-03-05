@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AboutPage extends BasePage {
 
-    //*********Constructor*********
     public AboutPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);

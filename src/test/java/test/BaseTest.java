@@ -16,11 +16,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup () {
-        //Create a Chrome driver. All test classes use this.
         driver = new ChromeDriver();
-        //Create a wait. All test classes use this.
-        //wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        //Maximize Window
         driver.manage().window().maximize();
         //Instantiate the Page Class
         page = new PageGenerator(driver);

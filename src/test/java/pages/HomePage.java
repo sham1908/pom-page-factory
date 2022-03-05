@@ -20,7 +20,6 @@ public class HomePage extends BasePage {
     @FindBy(css = "a[data-ga='[\"top navigation\",\"about menu click\",null,null,null]']")
     public WebElement aboutButton;
 
-
     //Go to Homepage: stackoverflow.com
     public HomePage goToStackOverflow() {
         // Log.info("Opening stackoverflow.com Website.");
